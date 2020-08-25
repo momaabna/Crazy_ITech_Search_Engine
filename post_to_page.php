@@ -23,7 +23,7 @@ $body = $row['body'];
 $cat = $row['cat'];
 $rest = $rest = substr(strip_tags($body), 0, 300);
 $url = 'http://crazyitech.com/tech/topic.php?id='.$id;	
-	$res = $fb->get('me/accounts','EAAIq4a2h6icBAIcrsSLzRBDplPvnMAC6bZBtZABI0lwiIZBZAMpLQi62ZCWkIJAEarh2f1jyBfWUQ6CclFjzzJIaplmuksfV9YzGWW0p8R4OVAiU7RxBhU9OhmbNACl0s7Du1WzfWiounyAQPwMXuI4PtOpNhG2ZC40ezf4uMUces7ZAjch9JEeF0rOdTboVzsZD');
+	$res = $fb->get('me/accounts','access-tocken');
 	$res = $res->getDecodedBody();
 	foreach($res['data'] as $page){
 		echo $page['id'] .' - ' .$page['name']. '<br>';
